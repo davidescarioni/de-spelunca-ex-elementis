@@ -225,7 +225,7 @@ if ((!kRight &amp;&amp; !kLeft) || (kRight &amp;&amp; kLeft)) {
 }
 
 //Shoot
-if (kShoot &amp;&amp; global.ice==true) {
+if (kShoot &amp;&amp; global.ice==true &amp;&amp; move) {
     var inst;
     inst = instance_create(x+dir, y, obj_ice);
     with (inst) {
