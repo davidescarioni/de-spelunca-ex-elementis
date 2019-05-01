@@ -1,0 +1,60 @@
+{
+    "ita": {
+        "menu_play": "Gioca",
+        "menu_resume": "Continua",
+        "menu_hscore": "Classifica Online",
+        "menu_res": "Risoluzione:",
+        "menu_snd": "Volume:",
+        "menu_ext": "Esci",
+        "menu_bk_home": "Torna al menu",
+
+        "instructions_one": "Usa le frecce per muoverti",
+        "instructions_two": "e Z per saltare",
+
+        "powerUp_iceTitle": "POTERE DEL GHIACCIO!",
+        "powerUp_iceText": "PREMI X PER CONGELARE I NEMICI",
+
+        "powerUp_fireTitle": "POTERE DEL FUOCO!",
+        "powerUp_fireText": "ORA PUOI CAMMINARE SULLA LAVA",
+
+        "powerUp_rockTitle": "POTERE DELLA ROCCIA!",
+        "powerUp_rockText": "PREMI FRECCIA IN GIU PER PIETRIFICARTI",
+
+        "powerUp_lightingTitle": "POTERE DEL LAMPO!",
+        "powerUp_lightingText": "EMETTI LUCE NELLE STANZE BUIE",
+
+        "powerUp_airTitle": "POTERE DELl'ARIA!",
+        "powerUp_airText": "ORA PUOI EFFETTUARE IL DOPPIO SALTO",
+
+        "boss_defeated": "PERDONAMI"
+    },
+    "eng": {
+        "menu_play": "Play",
+        "menu_resume": "Resume",
+        "menu_hscore": "Online Highscores",
+        "menu_res": "Resolution:",
+        "menu_snd": "Volume:",
+        "menu_ext": "Exit",
+        "menu_bk_home": "Back to menu",
+
+        "instructions_one": "Use arrow key to move",
+        "instructions_two": "and Z to jump",
+
+        "powerUp_iceTitle": "ICE POWER!",
+        "powerUp_iceText": "PRESS X TO FREEZE ENEMIES",
+        
+        "powerUp_fireTitle": "FIRE POWER!",
+        "powerUp_fireText": "NOW YOU CAN WALK ON LAVA",
+
+        "powerUp_rockTitle": "ROCK POWER!",
+        "powerUp_rockText": "PRESS DOWN ARROW TO PETRIFY YOU",
+
+        "powerUp_lightingTitle": "LIGHTING POWER!",
+        "powerUp_lightingText": "YOU SHINE IN THE DARK ROOM",
+
+        "powerUp_airTitle": "AIR POWER!",
+        "powerUp_airText": "NOW YOU CAN DOUBLE JUMP",
+
+        "boss_defeated": "FORGIVE ME"
+    }
+}
