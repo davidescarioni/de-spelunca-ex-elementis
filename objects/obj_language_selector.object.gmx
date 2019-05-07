@@ -61,7 +61,7 @@ if (kEnter) {
     
     var fade = instance_create(x,y,obj_fade)
     with fade {
-        rm_to_go=rm_menu
+        rm_to_go=rm_story
     }
     
     audio_play_sound(snd_sel, 10, false);
