@@ -78,6 +78,16 @@ if (place_meeting(x,y,obj_parent_solid)) {
     alarm[0]=1
 }
 
+if (place_meeting(x,y,obj_switcher)) {
+    if (global.switcher=="blue") {
+        global.switcher="red"
+    } else {
+        global.switcher="blue"
+    }
+    hspd=0;
+    alarm[0]=1
+}
+
 if (place_meeting(x,y,obj_boss_fs1) || place_meeting(x,y,obj_boss_fs2)) {
     hspd=0;
     obj_boss_health.hp-=1
