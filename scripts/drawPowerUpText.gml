@@ -38,7 +38,7 @@ draw_set_valign(fa_center);
 var xpos = view_wview[0]/2
 var ypos = view_hview[0]/3 +1
 draw_text_transformed(xpos, ypos, title, 0.35, 0.35, 0);
-draw_text_transformed(xpos, ypos+20, subtitle, 0.25, 0.25, 0);
+draw_text_transformed(xpos, ypos+20, subtitle, 0.20, 0.20, 0);
 //instance_deactivate_all(1);
 
 
