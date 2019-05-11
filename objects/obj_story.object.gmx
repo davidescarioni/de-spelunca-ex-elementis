@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="3" enumb="0">
+    <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -26,12 +26,37 @@
           <argument>
             <kind>1</kind>
             <string>story = load_string_json(global.language, "story")
-margin = 10
-
-kEnterRel = keyboard_check_released(vk_enter) || keyboard_check_released(ord("Z")) || (gamepad_button_check_pressed(0,gp_face1));
+next = load_string_json(global.language, "story_next")
+margin = 6
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>kEnterRel = keyboard_check_released(vk_enter) || keyboard_check_released(ord("Z")) || (gamepad_button_check_pressed(0,gp_face1));
 
 if (kEnterRel) {
-    instance_create(x,y,obj_fade)
+    var fade = instance_create(x,y,obj_fade)
+    with fade {
+        fade.rm_to_go=rm_menu
+    }
     audio_play_sound(snd_sel, 10, false);
 }
 </string>
@@ -56,12 +81,15 @@ if (kEnterRel) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_halign(fa_left)
-draw_set_valign(fa_top)
-draw_set_font(fnt_8bit_16)
+            <string>draw_set_valign(fa_top)
+draw_set_font(fnt_8bit_story)
 draw_set_colour(c_white)
 
-draw_text_ext(margin, margin, story, margin, room_width-2*margin);
+draw_set_halign(fa_left)
+draw_text_ext(margin, margin, story, 1.5*margin, room_width-2*margin);
+
+draw_set_halign(fa_right)
+draw_text_ext(room_width-margin, room_height-margin, next, 1.5*margin, room_width-2*margin);
 </string>
           </argument>
         </arguments>

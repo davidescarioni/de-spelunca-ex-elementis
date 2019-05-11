@@ -122,7 +122,9 @@
     <script>scripts\change_res.gml</script>
   </scripts>
   <fonts name="fonts">
+    <font>fonts\fnt_8bit_old</font>
     <font>fonts\fnt_8bit</font>
+    <font>fonts\fnt_8bit_story</font>
   </fonts>
   <objects name="objects">
     <objects name="Parent">
@@ -220,10 +222,12 @@
       <object>objects\obj_ice</object>
       <object>objects\obj_smoke</object>
     </objects>
+    <object>objects\obj_story</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_initial</room>
     <room>rooms\rm_language</room>
+    <room>rooms\rm_story</room>
     <room>rooms\rm_menu</room>
     <room>rooms\room0</room>
     <room>rooms\room3</room>

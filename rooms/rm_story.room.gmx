@@ -15,7 +15,6 @@ global.room_sud=noone;
 global.room_ovest=noone;
 global.room_est=noone;
 
-audio_stop_all();
 
 global.theme="standard"</code>
   <enableViews>-1</enableViews>
@@ -58,9 +57,7 @@ global.theme="standard"</code>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_menu" x="0" y="8" name="inst_9EB2EBC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_logo" x="0" y="0" name="inst_F4F8CB98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_credits" x="8" y="112" name="inst_C0D18546" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_story" x="0" y="0" name="inst_AFBF1EBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

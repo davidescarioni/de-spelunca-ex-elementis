@@ -12,8 +12,8 @@
   <showcolour>-1</showcolour>
   <code>global.room_nord=noone;
 global.room_sud=noone;
-global.room_ovest=rm_41;
-global.room_est=rm_61;
+global.room_ovest=noone;
+global.room_est=noone;
 
 
 global.theme="standard"</code>

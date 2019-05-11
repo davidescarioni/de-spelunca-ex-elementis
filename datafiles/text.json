@@ -8,6 +8,9 @@
         "menu_ext": "Esci",
         "menu_bk_home": "Torna al menu",
 
+        "story": "Un giovane mago divenne ebbro di potere una volta entrato nella leggendaria grotta degli elementi. In quanto suo vecchio maestro siete l'unico a poterlo fermare.",
+        "story_next": "Premi Z",
+
         "instructions_one": "Usa le frecce per muoverti",
         "instructions_two": "e Z per saltare",
 
@@ -36,6 +39,9 @@
         "menu_snd": "Volume:",
         "menu_ext": "Exit",
         "menu_bk_home": "Back to menu",
+
+        "story": "A young mage became drunk of power when he enters in the legendary cave of elements. As his old master you are the only one who can stop him.",
+        "story_next": "Press Z",
 
         "instructions_one": "Use arrow key to move",
         "instructions_two": "and Z to jump",

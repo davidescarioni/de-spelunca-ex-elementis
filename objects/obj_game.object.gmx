@@ -35,7 +35,7 @@ display_height=display_get_height();
 
 aspect_ratio= 1
 
-ideal_width=round(ideal_height*aspect_ratio);
+ideal_width=128//round(ideal_height*aspect_ratio);
 //ideal_height=round(ideal_width / aspect_ratio);
 
 //Perfect Pixel Scaling
