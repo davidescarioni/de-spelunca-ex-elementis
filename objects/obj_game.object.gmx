@@ -105,7 +105,7 @@ global.thunder=false;
 
 global.theme="standard"
 
-global.animate=false
+global.animate=true
 
 global.switcher="red"
 global.switch_green=true
