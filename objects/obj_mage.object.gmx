@@ -6,7 +6,7 @@
   <depth>-10</depth>
   <persistent>-1</persistent>
   <parentName>obj_parent_entity</parentName>
-  <maskName>spr_mage_mask</maskName>
+  <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>

@@ -41,7 +41,6 @@
   <sprites name="sprites">
     <sprite>sprites\spr_view</sprite>
     <sprite>sprites\spr_mage</sprite>
-    <sprite>sprites\spr_mage_mask</sprite>
     <sprite>sprites\spr_mage_death</sprite>
     <sprite>sprites\spr_controller</sprite>
     <sprite>sprites\spr_wall_d</sprite>

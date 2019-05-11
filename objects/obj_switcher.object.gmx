@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>self</parentName>
+  <parentName>obj_parent_solid</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="3" enumb="0">
@@ -25,13 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//if (place_meeting(x,y,obj_ice)) {
-//    if (global.switcher=="blue") {
-//        global.switcher="red"
-//    } else {
-//        global.switcher="blue"
-//    }
-//}
+            <string>if (place_meeting(x,y,obj_ice)) {
+    if (global.switcher=="blue") {
+        global.switcher="red"
+    } else {
+        global.switcher="blue"
+    }
+}
 </string>
           </argument>
         </arguments>

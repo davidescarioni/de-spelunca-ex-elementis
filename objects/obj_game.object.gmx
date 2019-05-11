@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///Display Properties
 ideal_width=0;
-ideal_height=135;
+ideal_height=128;
 global.zoom=2;
 max_zooom=1;
 display_width=display_get_width();
@@ -39,16 +39,16 @@ ideal_width=128//round(ideal_height*aspect_ratio);
 //ideal_height=round(ideal_width / aspect_ratio);
 
 //Perfect Pixel Scaling
-//if(display_width mod ideal_width != 0)
-//{
-//  var d = round(display_width/ideal_width);
-//  ideal_width=display_width/d;
-//}
-//if(display_height mod ideal_height != 0)
-//{
-//  var d = round(display_height/ideal_height);
-//  ideal_height=display_height/d;
-//}
+if(display_width mod ideal_width != 0)
+{
+  var d = round(display_width/ideal_width);
+  ideal_width=display_width/d;
+}
+if(display_height mod ideal_height != 0)
+{
+  var d = round(display_height/ideal_height);
+  ideal_height=display_height/d;
+}
 
 //Check for odd numbers
 if(ideal_width &amp; 1)
@@ -57,7 +57,7 @@ if(ideal_height &amp; 1)
   ideal_height++;
     
 //Calculate Max Zoom
-//max_zoom=floor(display_width/ideal_width);  
+max_zoom=floor(display_width/ideal_width);  
   
 for(var i=1; i&lt;=room_last; i++)
 {
