@@ -158,10 +158,11 @@ draw_text_transformed(x, y, message+cursor, 0.25, 0.25, 0);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.name=message
-send_score(message, obj_timer.minutes*60 + obj_timer.seconds - global.graal*30);
-instance_destroy()
-
+            <string>if (message!="") {
+    global.name=message
+    send_score(message, obj_timer.minutes*60 + obj_timer.seconds - global.graal*30);
+    instance_destroy()
+}
 </string>
           </argument>
         </arguments>

@@ -27,10 +27,12 @@
             <kind>1</kind>
             <string>/// Initialise loading the online highscores
 player_name = global.name;
-get_scores(player_name,7);
+get_scores(player_name,10);
 text = "";
 text2 = "";
 alarm[1] = room_speed;
+
+margin = 20
 </string>
           </argument>
         </arguments>
@@ -128,7 +130,7 @@ draw_set_color(c_white);
 if text == "Ready"
 {
     //draw_text_highscore(room_width/2-110, 50, "", "Name", "Score", string(text2), player_name, c_green);
-    draw_text_highscore(0, 10, "", "Name", "Score", string(text2), player_name, c_green);
+    draw_text_highscore(margin, margin, "", "Name", "Score", string(text2), player_name, c_green);
 }
 else
 {

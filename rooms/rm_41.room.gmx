@@ -10,7 +10,7 @@
   <persistent>0</persistent>
   <colour>0</colour>
   <showcolour>-1</showcolour>
-  <code>global.room_nord=rm_40;
+  <code>global.room_nord=noone;
 global.room_sud=rm_42;
 global.room_ovest=rm_31;
 global.room_est=rm_51;

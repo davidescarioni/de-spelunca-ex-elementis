@@ -77,7 +77,7 @@ for(var i=0; i<count+1; i+=1)
     // Draw the numbers
     draw_set_halign(fa_right);
     //draw_text(xx+max_la+5,yy+height,txt3a[i]);
-    draw_text_transformed(10, yy+height, txt3a[i], 0.25, 0.25, 0);
+    draw_text_transformed(xx, yy+height, txt3a[i], 0.3, 0.3, 0);
     
     // Assure that if a player has a # in his name, then escape (I know I'm doing this twice
     // but that's needed for the string_width in the previous block to work properly
@@ -89,8 +89,8 @@ for(var i=0; i<count+1; i+=1)
     //draw_text(xx+max_la+10+max_lb+10,yy+height,txt3c[i]);
     //draw_text_transformed(xx+max_la+10, yy+height, txt3b[i], 0.25, 0.25, 0);
     //draw_text_transformed(xx+max_la+10+max_lb+10, yy+height, txt3c[i], 0.25, 0.25, 0);
-    draw_text_transformed(20, yy+height, txt3b[i], 0.25, 0.25, 0);
-    draw_text_transformed(60, yy+height, txt3c[i], 0.25, 0.25, 0);
+    draw_text_transformed(xx+10, yy+height, txt3b[i], 0.3, 0.3, 0);
+    draw_text_transformed(room_width-(xx+10), yy+height, txt3c[i], 0.3, 0.3, 0);
     
-    height += string_height(str3[i])-7;
+    height += string_height(str3[i])-4;
 } 
