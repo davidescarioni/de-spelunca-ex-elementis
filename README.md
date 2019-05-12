@@ -5,7 +5,7 @@ The repository of my little metroidvania game _De Spelunca Ex Elementis_, made w
 I use the color Palette and the room dimension of the _Pico-8_ (an 8-bit fantasy console) and I take inspiration from, among others, Get Out and Cubevania, that are 2 Pico-8 game.
 If you want to play the game first, you can find it [here on Indiexpo](https://www.indiexpo.net/it/games/de-spelunca-ex-elementis).
 
-##How to start-up the repository
+## How to start-up the repository
 
 After clone the repo, and before you launch Game Maker Studio, you must create two scripts called rispectively __get_score__ and __send_score__
 
@@ -31,7 +31,7 @@ __send_score__
     http_post_string(addScorePhp, args); 
 ```
 
-#Changelog
+## Changelog
 
 * 1.1
     * Reactivate animation when player jump and fix collision bugs
@@ -46,7 +46,7 @@ __send_score__
     * Remove cheats
 
 
-##Credits
+## Credits
 I develop on GM for years, so probably I need to thanks with Shaung Spalding, Zack Bell and HeartBeast for their old tutorial where I learned how to program with GML.
 Insted for this game I need to credit and thanks:
 - Appsurd, for the online highscore table tutorial that I find on Yoyogames's forum
