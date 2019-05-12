@@ -37,6 +37,7 @@ __send_score__
     * Reactivate animation when player jump and fix collision bugs
     * Fix game resolution bug
     * Change font to improve readability
+    * Add history when game starts.
     * Now you must enter a name if you want to posto you highscore online
     * Minor fixes
 
