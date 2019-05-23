@@ -45,6 +45,8 @@ menu_array[3]=bk
 
 gamepad_set_axis_deadzone(0,0.7)
 
+instance_create(x,y,obj_android)
+
 
 
 

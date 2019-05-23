@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>1316134911</depth>
+  <depth>1</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,84 +25,23 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.destr_container_rm[0]=rm_51
-global.destr_container_obj[0]=obj_graal
-global.destr_container_obj_exist[0]=true
-global.destr_container_objx[0]=6
-global.destr_container_objy[0]=8
+            <string>//window_set_colour(c_gray)
+a = application_get_position();
+xx = a[0];
+yy = a[1];
+ww = a[2] - a[0];
+hh = a[3] - a[1];
 
-global.destr_container_rm[1]=rm_60
-global.destr_container_obj[1]=obj_graal
-global.destr_container_obj_exist[1]=true
-global.destr_container_objx[1]=120
-global.destr_container_objy[1]=40
-
-global.destr_container_rm[2]=rm_32
-global.destr_container_obj[2]=obj_graal
-global.destr_container_obj_exist[2]=true
-global.destr_container_objx[2]=116
-global.destr_container_objy[2]=68
-
-global.destr_container_rm[3]=rm_21
-global.destr_container_obj[3]=obj_graal
-global.destr_container_obj_exist[3]=true
-global.destr_container_objx[3]=104
-global.destr_container_objy[3]=24
-
-global.destr_container_rm[4]=rm_50
-global.destr_container_obj[4]=obj_graal
-global.destr_container_obj_exist[4]=true
-global.destr_container_objx[4]=8
-global.destr_container_objy[4]=112
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>other</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>//if (instance_exists(obj_graal)) {
-//    var identifier = obj_graal.id; 
-    
-    //for (var i=0; i&lt;array_length_1d(global.destr_container); i++) {
-        //global.destr_container[i]=identifier
-       //if (global.destr_container[i]==identifier) {
-       //  with (identifier) {
-       //         instance_destroy();
-       //     }
-       // } else {
-       //     if (i=array_length_1d(global.destr_container)-1) {
-       //         array[i+1]=identifier;
-       //     }
-        //}
-    //}
-    
-//}
+margin = 40
+//btn_dim = sprite_get_width(spr_arrow_up)*mul
+btn_dim = (xx - 2*margin) / 3;
+mul = btn_dim / sprite_get_width(spr_arrow_up)
 
 
-for (var i=0; i&lt;array_length_1d(global.destr_container_obj); i++) {
-    if (room==global.destr_container_rm[i]) {
-        if (global.destr_container_obj_exist[i]==true) {
-            instance_create(global.destr_container_objx[i], global.destr_container_objy[i], global.destr_container_obj[i]);
-        }
-    }
-    
-}
+
+
+
+
 </string>
           </argument>
         </arguments>
@@ -125,14 +64,78 @@ for (var i=0; i&lt;array_length_1d(global.destr_container_obj); i++) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var xpos = 69;
-var ypos = 119;
-draw_set_colour(c_white)
-draw_set_font(fnt_8bit)
-draw_set_halign(fa_center);
-draw_set_valign(fa_center);
-display_set_gui_size(128, 128);
-draw_text_transformed(xpos, ypos, "x" + string(global.graal), 0.2, 0.2, 0);
+            <string>display_set_gui_maximise(); 
+
+//UP
+pos_up_x = margin + btn_dim
+pos_up_y = display_get_height() - margin - btn_dim*3
+
+draw_sprite_ext(spr_arrow_up, image_index, pos_up_x, pos_up_y, mul, mul, image_angle, image_blend, image_alpha);
+virtual_key_add(pos_up_x, pos_up_y, btn_dim, btn_dim, vk_up); 
+
+//DOWN
+pos_down_x = pos_up_x
+pos_down_y = display_get_height() - margin - btn_dim
+
+draw_sprite_ext(spr_arrow_down, image_index, pos_down_x, pos_down_y, mul, mul, image_angle, image_blend, image_alpha);
+virtual_key_add(pos_down_x, pos_down_y, btn_dim, btn_dim, vk_down); 
+
+//LEFT
+pos_left_x = margin
+pos_left_y = display_get_height() - margin - btn_dim*2
+draw_sprite_ext(spr_arrow_left, image_index, pos_left_x, pos_left_y, mul, mul, image_angle, image_blend, image_alpha);
+virtual_key_add(pos_left_x, pos_left_y, btn_dim, btn_dim, vk_left); 
+
+//RIGHT
+pos_right_x = margin + btn_dim*2
+pos_right_y = pos_left_y
+draw_sprite_ext(spr_arrow_right, image_index, pos_right_x, pos_right_y, mul, mul, image_angle, image_blend, image_alpha);
+virtual_key_add(pos_right_x, pos_right_y, btn_dim, btn_dim, vk_right); 
+
+//Z
+pos_btnz_x = display_get_width() - 2*margin - btn_dim
+pos_btnz_y = pos_left_y
+draw_sprite_ext(spr_z_btn, image_index,pos_btnz_x, pos_btnz_y, mul, mul, image_angle, image_blend, image_alpha);
+virtual_key_add(pos_btnz_x, pos_btnz_y, btn_dim, btn_dim, ord("Z")); 
+
+//X
+pos_btnz_x = display_get_width() - 2*margin - btn_dim*2.5
+pos_btnz_y = pos_left_y
+draw_sprite_ext(spr_x_btn, image_index,pos_btnz_x, pos_btnz_y, mul, mul, image_angle, image_blend, image_alpha);
+virtual_key_add(pos_btnz_x, pos_btnz_y, btn_dim, btn_dim, ord("X"));
+
+//ESC
+pos_btnz_x = display_get_width() - 2*margin - btn_dim*1.5
+pos_btnz_y = margin
+draw_sprite_ext(spr_esc_btn, image_index,pos_btnz_x, pos_btnz_y, mul, mul, image_angle, image_blend, image_alpha);
+virtual_key_add(pos_btnz_x, pos_btnz_y, btn_dim, btn_dim, vk_escape); 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//draw_set_colour(c_red)
+//draw_text(10,10, xx)
+//draw_text(10,30, yy)
+//draw_text(10,50, ww)
+//draw_text(10,70, hh)
 </string>
           </argument>
         </arguments>

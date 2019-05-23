@@ -105,8 +105,19 @@
     <sprite>sprites\spr_ita</sprite>
     <sprite>sprites\spr_eng</sprite>
     <sprite>sprites\spr_logo</sprite>
+    <sprites name="virtual_keys">
+      <sprite>sprites\spr_arrow_down</sprite>
+      <sprite>sprites\spr_arrow_right</sprite>
+      <sprite>sprites\spr_arrow_left</sprite>
+      <sprite>sprites\spr_arrow_up</sprite>
+      <sprite>sprites\spr_z_btn</sprite>
+      <sprite>sprites\spr_esc_btn</sprite>
+      <sprite>sprites\spr_x_btn</sprite>
+    </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background0</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\Approach.gml</script>
@@ -224,6 +235,7 @@
       <object>objects\obj_smoke</object>
     </objects>
     <object>objects\obj_story</object>
+    <object>objects\obj_android</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_initial</room>
