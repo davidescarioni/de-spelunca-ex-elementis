@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>if (global.os==os_windows) {
-    instance_create(52,72,obj_textbox_win)
+   instance_create(47,92,obj_textbox_win)
 }
 
 if (global.os==os_android) {

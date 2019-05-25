@@ -220,10 +220,10 @@ switch (pos) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-draw_set_colour(c_white)
+            <string>draw_set_colour(c_white)
 draw_set_font(fnt_8bit_story)
 draw_set_halign(fa_left)
+draw_set_valign(fa_top)
 draw_text_ext(txt_margin, txt_margin, text, txt_margin, room_width-2*txt_margin);
 
 draw_set_font(fnt_8bit)
@@ -285,7 +285,7 @@ switch(pos) {
         </arguments>
       </action>
     </event>
-    <event eventtype="10" enumb="13">
+    <event eventtype="10" enumb="90">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -302,7 +302,7 @@ switch(pos) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>message = char1+char2+char3+char4+char5
+            <string>message = string(char1[i1]+char2[i2]+char3[i3]+char4[i4]+char5[i5])
 
 if (message!="") {
     global.name=message

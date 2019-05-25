@@ -30,7 +30,7 @@ xdist = room_width/7
 txt_margin = xdist-5
 
 message = "";
-limit = 9;
+limit = 7;
 cursor = "|";
 delay = 20;
 alarm[0] = delay;
@@ -144,8 +144,9 @@ draw_text_ext(txt_margin, txt_margin, text, txt_margin, room_width-2*txt_margin)
 
 draw_set_halign(fa_left)
 draw_set_valign(fa_center)
-draw_set_font(fnt_8bit) //TODO
-draw_text_transformed(x, y, message+cursor, 0.25, 0.25, 0); //TODO
+draw_set_font(fnt_8bit_story) //TODO
+draw_text(x, y, message+cursor)
+//draw_text_transformed(x, y, message+cursor, 0.25, 0.25, 0); //TODO
 </string>
           </argument>
         </arguments>
