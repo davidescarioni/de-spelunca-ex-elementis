@@ -128,6 +128,8 @@ global.room_nord=noone;
 global.room_sud=noone;
 global.room_ovest=noone;
 global.room_est=noone;
+
+
 </string>
           </argument>
         </arguments>
@@ -153,6 +155,33 @@ global.room_est=noone;
 pause = false
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Which os
+
+global.os = os_type;
+
+if (global.os == os_android) {
+    instance_create(x,y,obj_android)
+}
 </string>
           </argument>
         </arguments>
@@ -239,8 +268,16 @@ if (key_exit) {
         break;
         default:
             if (!instance_exists(obj_pause)) {
+                if instance_exists(obj_android) {
+                    with obj_android {
+                        instance_destroy()
+                    }
+                }
                 instance_deactivate_all(true)
                 instance_create(x,y,obj_pause)
+                if (global.os==os_android) {
+                   instance_create(x,y,obj_android)
+                }
             }
         break;
     }

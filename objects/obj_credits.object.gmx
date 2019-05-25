@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>1215752191</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -28,6 +28,7 @@
             <string>draw_set_halign(fa_center)
 draw_set_valign(fa_center)
 draw_set_font(fnt_8bit)
+draw_set_colour(c_white)
     
 draw_text_transformed(room_width/2, 120, "Davide Scarioni | 2019", 0.25, 0.25, 0);
 

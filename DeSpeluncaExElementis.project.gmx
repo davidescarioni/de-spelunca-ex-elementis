@@ -167,8 +167,10 @@
       <object>objects\obj_wall_dl</object>
     </objects>
     <objects name="Highscore">
-      <object>objects\obj_textbox</object>
+      <object>objects\obj_textbox_win</object>
       <object>objects\obj_highscore</object>
+      <object>objects\obj_textbox_and</object>
+      <object>objects\obj_OS_name</object>
     </objects>
     <objects name="Enemies">
       <objects name="Boss">
@@ -239,6 +241,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_initial</room>
+    <room>rooms\test_name</room>
     <room>rooms\rm_language</room>
     <room>rooms\rm_story</room>
     <room>rooms\rm_menu</room>

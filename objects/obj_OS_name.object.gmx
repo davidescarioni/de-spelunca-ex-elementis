@@ -25,35 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>window_set_colour(c_gray)
+            <string>if (global.os==os_windows) {
+    instance_create(52,72,obj_textbox_win)
+}
 
-virtual_key_add(10, window_get_height()-50, 40, 40, vk_left); 
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="76">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_sprite(spr_arrow_up,0,window_get_width()/5, window_get_height()/5)
+if (global.os==os_android) {
+    instance_create(x,y,obj_textbox_and)
+}
 
-
-//draw_background_stretched(background0, 0, 0, window_get_width(), window_get_height()) 
+instance_destroy()
 </string>
           </argument>
         </arguments>

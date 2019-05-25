@@ -27,6 +27,11 @@
             <kind>1</kind>
             <string>sel=0
 vol=0.4
+dist = 10
+
+if (global.os==os_android) {
+    dist = 15
+}
 </string>
           </argument>
         </arguments>
@@ -97,12 +102,6 @@ if (global.zoom&lt;6) {
     zm = "FullScreen"
 }
 
-menu_array[0]=play
-menu_array[1]=hscore
-menu_array[2]=resolution + zm
-menu_array[3]=snd + string(round(vol*10))
-menu_array[4]=ext
-
 kDownRel     = keyboard_check_released(vk_down) || (gamepad_axis_value(0,gp_axislv) &gt; 0) || gamepad_button_check_released(0,gp_padd);
 kUpRel       = keyboard_check_released(vk_up)|| (gamepad_axis_value(0,gp_axislv) &lt; 0) || gamepad_button_check_released(0,gp_padu);
 kEnterRel    = keyboard_check_released(vk_enter) || keyboard_check_released(ord("Z")) || (gamepad_button_check_pressed(0,gp_face1));
@@ -117,35 +116,73 @@ if (kUpRel &amp;&amp; sel&gt;0) {
     audio_play_sound(snd_menu_mov, 10, false);
 }
 
-if (kEnterRel) {
- switch (sel)
-    {
-    case 0:
-      instance_create(x,y,obj_fade)
-      instance_create(x,y,obj_instructions)
-      audio_play_sound(snd_sel, 10, false);
-      break;
-    case 1:
-      room_goto(rm_highscore)
-      audio_play_sound(snd_sel, 10, false);
-      break;
-    case 2:
-      change_res()
-      audio_play_sound(snd_sel, 10, false);
-      break;
-    case 3:
-      if vol &lt; 1 { 
-        vol += 0.1;
-      } else {
-        vol=0
-      }
-      audio_master_gain(vol);
-      audio_play_sound(snd_sel, 10, false);
-      break;
-    case 4:
-      audio_play_sound(snd_sel, 10, false);
-      game_end()
-      break;
+if (global.os==os_windows) {
+    menu_array[0]=play
+    menu_array[1]=hscore
+    menu_array[2]=resolution + zm
+    menu_array[3]=snd + string(round(vol*10))
+    menu_array[4]=ext
+    
+    if (kEnterRel) {
+     switch (sel)
+        {
+        case 0:
+          instance_create(x,y,obj_fade)
+          instance_create(x,y,obj_instructions)
+          audio_play_sound(snd_sel, 10, false);
+          break;
+        case 1:
+          room_goto(rm_highscore)
+          audio_play_sound(snd_sel, 10, false);
+          break;
+        case 2:
+          change_res()
+          audio_play_sound(snd_sel, 10, false);
+          break;
+        case 3:
+          if vol &lt; 1 { 
+            vol += 0.1;
+          } else {
+            vol=0
+          }
+          audio_master_gain(vol);
+          audio_play_sound(snd_sel, 10, false);
+          break;
+        case 4:
+          audio_play_sound(snd_sel, 10, false);
+          game_end()
+          break;
+        }
+    }
+}
+
+if (global.os==os_android) {
+    menu_array[0]=play
+    menu_array[1]=hscore
+    menu_array[2]=snd + string(round(vol*10))
+    
+    if (kEnterRel) {
+     switch (sel)
+        {
+        case 0:
+          instance_create(x,y,obj_fade)
+          instance_create(x,y,obj_instructions)
+          audio_play_sound(snd_sel, 10, false);
+          break;
+        case 1:
+          room_goto(rm_highscore)
+          audio_play_sound(snd_sel, 10, false);
+          break;
+        case 2:
+          if vol &lt; 1 { 
+            vol += 0.1;
+          } else {
+            vol=0
+          }
+          audio_master_gain(vol);
+          audio_play_sound(snd_sel, 10, false);
+          break;
+        }
     }
 }
 </string>
@@ -183,11 +220,11 @@ for (var i=0; i&lt;array_length_1d(menu_array); i++) {
         back_sel = c_black
     }
     
-    draw_rectangle_colour(20, room_height/2 + i*10 -4, 108, room_height/2 + i*10 + 4, back_sel, back_sel, back_sel, back_sel, false); 
+    draw_rectangle_colour(20, room_height/2 + i*dist -4, 108, room_height/2 + i*dist + 4, back_sel, back_sel, back_sel, back_sel, false); 
     
     draw_set_colour(col)
     
-    draw_text_transformed(room_width/2, room_height/2 + i*10, menu_array[i], 0.25, 0.25, 0);
+    draw_text_transformed(room_width/2, room_height/2 + i*dist, menu_array[i], 0.25, 0.25, 0);
     
     
 }

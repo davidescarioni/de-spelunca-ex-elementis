@@ -106,7 +106,7 @@ virtual_key_add(pos_btnz_x, pos_btnz_y, btn_dim, btn_dim, ord("X"));
 
 //ESC
 pos_btnz_x = display_get_width() - 2*margin - btn_dim*1.5
-pos_btnz_y = margin
+pos_btnz_y = margin*3
 draw_sprite_ext(spr_esc_btn, image_index,pos_btnz_x, pos_btnz_y, mul, mul, image_angle, image_blend, image_alpha);
 virtual_key_add(pos_btnz_x, pos_btnz_y, btn_dim, btn_dim, vk_escape); 
 </string>
@@ -132,7 +132,7 @@ virtual_key_add(pos_btnz_x, pos_btnz_y, btn_dim, btn_dim, vk_escape);
           <argument>
             <kind>1</kind>
             <string>//draw_set_colour(c_red)
-//draw_text(10,10, xx)
+//draw_text(10,10, string(os_type))
 //draw_text(10,30, yy)
 //draw_text(10,50, ww)
 //draw_text(10,70, hh)

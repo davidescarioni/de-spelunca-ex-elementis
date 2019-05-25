@@ -29,7 +29,9 @@
         "powerUp_airTitle": "POTERE DELl'ARIA!",
         "powerUp_airText": "ORA PUOI EFFETTUARE IL DOPPIO SALTO",
 
-        "boss_defeated": "PERDONAMI"
+        "boss_defeated": "PERDONAMI",
+
+        "add_highscore": "Inserisci il tuo nome per entrare nella classifica globale"
     },
     "eng": {
         "menu_play": "Play",
@@ -61,6 +63,8 @@
         "powerUp_airTitle": "AIR POWER!",
         "powerUp_airText": "NOW YOU CAN DOUBLE JUMP",
 
-        "boss_defeated": "FORGIVE ME"
+        "boss_defeated": "FORGIVE ME",
+
+        "add_highscore": "Add your name to enter in the global highscore table"
     }
 }
