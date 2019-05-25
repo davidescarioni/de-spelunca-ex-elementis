@@ -25,7 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>message = "";
+            <string>text = load_string_json(global.language, "add_highscore")
+xdist = room_width/7
+txt_margin = xdist-5
+
+message = "";
 limit = 9;
 cursor = "|";
 delay = 20;
@@ -131,11 +135,17 @@ alarm[0] = delay;
           <argument>
             <kind>1</kind>
             <string>draw_self()
+draw_set_colour(c_white)
+
+draw_set_halign(fa_left)
+draw_set_valign(fa_top)
+draw_set_font(fnt_8bit_story)
+draw_text_ext(txt_margin, txt_margin, text, txt_margin, room_width-2*txt_margin);
+
 draw_set_halign(fa_left)
 draw_set_valign(fa_center)
-draw_set_font(fnt_8bit)
-draw_set_colour(c_white)
-draw_text_transformed(x, y, message+cursor, 0.25, 0.25, 0);
+draw_set_font(fnt_8bit) //TODO
+draw_text_transformed(x, y, message+cursor, 0.25, 0.25, 0); //TODO
 </string>
           </argument>
         </arguments>
