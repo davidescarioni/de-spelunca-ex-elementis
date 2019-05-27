@@ -369,7 +369,7 @@ if (x&lt;0) &amp;&amp; (global.room_ovest!=noone) {
 }
 if (y&gt;room_height) &amp;&amp; (global.room_sud!=noone) {
     room_goto(global.room_sud)
-    y=1
+    y=0
 }
 if (y&lt;0) &amp;&amp; (global.room_nord!=noone) {
     room_goto(global.room_nord)

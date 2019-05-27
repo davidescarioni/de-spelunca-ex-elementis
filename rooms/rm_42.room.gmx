@@ -70,8 +70,7 @@ global.theme="standard"</code>
     <instance objName="obj_wall_d" x="96" y="40" name="inst_4455D7C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_d" x="88" y="40" name="inst_43481A4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_d" x="40" y="0" name="inst_FFF67959" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall_d" x="32" y="-8" name="inst_77E70423" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall_d" x="40" y="-8" name="inst_8C99CE70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall_d" x="48" y="-8" name="inst_8C99CE70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_d" x="80" y="40" name="inst_24DF5A83" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lavawave" x="0" y="40" name="inst_C8DCBFEC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_d" x="88" y="-8" name="inst_50F5E716" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -105,6 +104,10 @@ global.theme="standard"</code>
     <instance objName="obj_wall_ur" x="56" y="8" name="inst_01305000" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_ur" x="64" y="16" name="inst_51663284" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_ur" x="72" y="24" name="inst_34B5BB49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall_d" x="24" y="0" name="inst_C0F34CBF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall_d" x="16" y="0" name="inst_B73C8813" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall_d" x="8" y="0" name="inst_5BC2E769" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall_d" x="0" y="0" name="inst_B2FA67B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

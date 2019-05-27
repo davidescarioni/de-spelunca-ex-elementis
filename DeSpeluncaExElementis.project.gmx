@@ -45,6 +45,7 @@
     <sprite>sprites\spr_mage_death</sprite>
     <sprite>sprites\spr_controller</sprite>
     <sprite>sprites\spr_wall_d</sprite>
+    <sprite>sprites\spr_wall_angle_left</sprite>
     <sprite>sprites\spr_switch_blue</sprite>
     <sprite>sprites\spr_block_blue</sprite>
     <sprite>sprites\spr_switch_red</sprite>
@@ -53,7 +54,6 @@
     <sprite>sprites\spr_iceBreak</sprite>
     <sprite>sprites\spr_light_in_darkness</sprite>
     <sprite>sprites\spr_darkness</sprite>
-    <sprite>sprites\spr_wall_angle_left</sprite>
     <sprite>sprites\spr_iceblock</sprite>
     <sprite>sprites\spr_arrow</sprite>
     <sprite>sprites\spr_box</sprite>

@@ -124,6 +124,8 @@ global.theme="standard"</code>
     <instance objName="obj_wall_left" x="128" y="32" name="inst_26542828" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_left" x="128" y="40" name="inst_84ACC607" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_dl" x="128" y="48" name="inst_8F0BC53A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall_right" x="48" y="136" name="inst_3FA2C8C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall_left" x="88" y="136" name="inst_6C421662" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

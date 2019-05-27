@@ -6,7 +6,7 @@
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>obj_parent_solid</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>spr_mage_mask</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>

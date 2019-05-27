@@ -33,6 +33,15 @@ __send_score__
 
 ## Changelog
 
+* 1.2.1
+    * Finally fix the compenetration bug in the first lava room
+
+* 1.2
+    * Bugfix boss death
+    * Now darkness is more understandable
+    * Fix wall position
+    * Fix graal counter bug
+
 * 1.1
     * Reactivate animation when player jump and fix collision bugs
     * Fix game resolution bug
