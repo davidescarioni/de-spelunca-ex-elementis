@@ -241,12 +241,12 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_initial</room>
-    <room>rooms\rm_putHighscore</room>
     <room>rooms\rm_language</room>
     <room>rooms\rm_story</room>
     <room>rooms\rm_menu</room>
     <room>rooms\room0</room>
     <room>rooms\room3</room>
+    <room>rooms\rm_putHighscore</room>
     <room>rooms\rm_highscore</room>
     <rooms name="Game Room">
       <room>rooms\rm_11</room>

@@ -73,7 +73,6 @@ global.theme="standard"</code>
     <instance objName="obj_wall_right" x="0" y="8" name="inst_FF4CC2BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_right" x="0" y="16" name="inst_6E6D9F7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_right" x="0" y="24" name="inst_48214C48" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall_d" x="64" y="0" name="inst_165B3590" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_u" x="64" y="0" name="inst_6447DCFD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_u" x="72" y="0" name="inst_1199DD9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall_u" x="80" y="0" name="inst_56644984" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

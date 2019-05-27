@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0]=room_speed;
+            <string>global.graal+=1;
+alarm[0]=room_speed;
 </string>
           </argument>
         </arguments>
@@ -48,8 +49,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.graal+=1;
-instance_destroy();
+            <string>instance_destroy();
 </string>
           </argument>
         </arguments>

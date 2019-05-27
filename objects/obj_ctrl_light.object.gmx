@@ -8,6 +8,52 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alpha=0
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alpha+=0.025
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -26,9 +72,9 @@
           <argument>
             <kind>1</kind>
             <string>if (global.thunder==true){
-    draw_sprite(spr_light_in_darkness, 0, obj_mage.x, obj_mage.y);
+    draw_sprite_ext(spr_light_in_darkness, 0, obj_mage.x, obj_mage.y, 1, 1, 0, c_white, alpha);
 } else {
-    draw_sprite(spr_darkness, 0, obj_mage.x, obj_mage.y);
+    draw_sprite_ext(spr_darkness, 0, obj_mage.x, obj_mage.y, 1, 1, 0, c_white, alpha);
 }
 </string>
           </argument>
