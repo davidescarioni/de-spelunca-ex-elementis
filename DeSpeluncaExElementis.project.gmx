@@ -39,25 +39,23 @@
     <sound>sound\snd_boss_battle</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\spr_view</sprite>
-    <sprite>sprites\spr_mage</sprite>
-    <sprite>sprites\spr_mage_mask</sprite>
-    <sprite>sprites\spr_mage_death</sprite>
-    <sprite>sprites\spr_controller</sprite>
-    <sprite>sprites\spr_wall_d</sprite>
-    <sprite>sprites\spr_wall_angle_left</sprite>
-    <sprite>sprites\spr_switch_blue</sprite>
-    <sprite>sprites\spr_block_blue</sprite>
-    <sprite>sprites\spr_switch_red</sprite>
-    <sprite>sprites\spr_block_red</sprite>
-    <sprite>sprites\spr_ice</sprite>
-    <sprite>sprites\spr_iceBreak</sprite>
-    <sprite>sprites\spr_light_in_darkness</sprite>
-    <sprite>sprites\spr_darkness</sprite>
-    <sprite>sprites\spr_iceblock</sprite>
-    <sprite>sprites\spr_arrow</sprite>
-    <sprite>sprites\spr_box</sprite>
-    <sprite>sprites\spr_arrowlauncher</sprite>
+    <sprites name="Elements">
+      <sprite>sprites\spr_block_red</sprite>
+      <sprite>sprites\spr_switch_red</sprite>
+      <sprite>sprites\spr_block_blue</sprite>
+      <sprite>sprites\spr_switch_blue</sprite>
+      <sprite>sprites\spr_block_green</sprite>
+      <sprite>sprites\spr_iceblock</sprite>
+      <sprite>sprites\spr_checkpoint_on</sprite>
+      <sprite>sprites\spr_checkpoint_off</sprite>
+      <sprite>sprites\spr_graal</sprite>
+      <sprite>sprites\spr_box</sprite>
+      <sprite>sprites\spr_light_in_darkness</sprite>
+      <sprite>sprites\spr_darkness</sprite>
+      <sprite>sprites\spr_iceBreak</sprite>
+      <sprite>sprites\spr_ice</sprite>
+      <sprite>sprites\spr_smoke</sprite>
+    </sprites>
     <sprites name="map">
       <sprite>sprites\spr_map</sprite>
       <sprite>sprites\spr_map_eso</sprite>
@@ -88,23 +86,6 @@
       <sprite>sprites\spr_thunderPower</sprite>
       <sprite>sprites\spr_airPower</sprite>
     </sprites>
-    <sprite>sprites\spr_lava</sprite>
-    <sprite>sprites\spr_lava_small</sprite>
-    <sprite>sprites\spr_lavawave</sprite>
-    <sprite>sprites\spr_hud</sprite>
-    <sprite>sprites\spr_checkpoint_on</sprite>
-    <sprite>sprites\spr_checkpoint_off</sprite>
-    <sprite>sprites\spr_graal</sprite>
-    <sprite>sprites\boss</sprite>
-    <sprite>sprites\spr_boss_stand</sprite>
-    <sprite>sprites\spr_boss_barrier</sprite>
-    <sprite>sprites\spr_boss</sprite>
-    <sprite>sprites\spr_textbox</sprite>
-    <sprite>sprites\spr_block_green</sprite>
-    <sprite>sprites\spr_smoke</sprite>
-    <sprite>sprites\spr_ita</sprite>
-    <sprite>sprites\spr_eng</sprite>
-    <sprite>sprites\spr_logo</sprite>
     <sprites name="virtual_keys">
       <sprite>sprites\spr_arrow_down</sprite>
       <sprite>sprites\spr_arrow_right</sprite>
@@ -114,10 +95,39 @@
       <sprite>sprites\spr_esc_btn</sprite>
       <sprite>sprites\spr_x_btn</sprite>
     </sprites>
+    <sprites name="Walls">
+      <sprite>sprites\spr_wall_d</sprite>
+      <sprite>sprites\spr_wall_angle_left</sprite>
+    </sprites>
+    <sprites name="Enemies">
+      <sprites name="Boss">
+        <sprite>sprites\spr_boss</sprite>
+        <sprite>sprites\spr_boss_barrier</sprite>
+        <sprite>sprites\boss</sprite>
+        <sprite>sprites\spr_boss_stand</sprite>
+      </sprites>
+      <sprite>sprites\spr_arrow</sprite>
+      <sprite>sprites\spr_arrowlauncher</sprite>
+      <sprite>sprites\spr_lava</sprite>
+      <sprite>sprites\spr_lava_small</sprite>
+      <sprite>sprites\spr_lavawave</sprite>
+    </sprites>
+    <sprites name="Player">
+      <sprite>sprites\spr_mage_death</sprite>
+      <sprite>sprites\spr_mage_mask</sprite>
+      <sprite>sprites\spr_mage</sprite>
+    </sprites>
+    <sprites name="Menu">
+      <sprite>sprites\spr_view</sprite>
+      <sprite>sprites\spr_controller</sprite>
+      <sprite>sprites\spr_textbox</sprite>
+      <sprite>sprites\spr_hud</sprite>
+      <sprite>sprites\spr_logo</sprite>
+      <sprite>sprites\spr_ita</sprite>
+      <sprite>sprites\spr_eng</sprite>
+    </sprites>
   </sprites>
-  <backgrounds name="background">
-    <background>background\background0</background>
-  </backgrounds>
+  <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\Approach.gml</script>
@@ -238,6 +248,7 @@
     </objects>
     <object>objects\obj_story</object>
     <object>objects\obj_android</object>
+    <object>objects\obj_recap</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_initial</room>

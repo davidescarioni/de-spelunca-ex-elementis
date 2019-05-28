@@ -33,6 +33,9 @@ __send_score__
 
 ## Changelog
 
+* 1.2.2
+    * Add highscore recap
+
 * 1.2.1
     * Finally fix the compenetration bug in the first lava room
 

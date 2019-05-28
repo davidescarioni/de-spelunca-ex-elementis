@@ -31,6 +31,10 @@
 
         "boss_defeated": "PERDONAMI",
 
+        "highscore_title": "Punteggio",
+        "highscore_save": "Salva",
+        "highscore_gotohome": "Dimentica",
+
         "add_highscore": "Inserisci il tuo nome per entrare nella classifica globale"
     },
     "eng": {
@@ -64,6 +68,10 @@
         "powerUp_airText": "NOW YOU CAN DOUBLE JUMP",
 
         "boss_defeated": "FORGIVE ME",
+
+        "highscore_title": "Highscore",
+        "highscore_save": "Save",
+        "highscore_gotohome": "Discard",
 
         "add_highscore": "Add your name to enter in the global highscore table"
     }
