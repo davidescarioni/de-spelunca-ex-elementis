@@ -29,13 +29,9 @@
 save = load_string_json(global.language, "highscore_save")
 discard = load_string_json(global.language, "highscore_gotohome")
 
-//minutes = obj_timer.minutes*60
-//seconds = obj_timer.seconds
-//graal = global.graal*30
-
-minutes = 20*60
-seconds = 10
-graal = 2*30
+minutes = obj_timer.minutes*60
+seconds = obj_timer.seconds
+graal = global.graal*30
 
 sel = 0
 
