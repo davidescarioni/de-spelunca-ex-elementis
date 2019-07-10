@@ -119,7 +119,7 @@ if ds_map_find_value(async_load, "id") == get_highscores
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>other</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
@@ -129,12 +129,17 @@ if ds_map_find_value(async_load, "id") == get_highscores
 draw_set_color(c_white);
 if text == "Ready"
 {
+    draw_set_font(fnt_8bit)
     //draw_text_highscore(room_width/2-110, 50, "", "Name", "Score", string(text2), player_name, c_green);
     draw_text_highscore(margin, margin, "", "Name", "Score", string(text2), player_name, c_green);
 }
 else
 {
-    draw_text(room_width/2, 50, text);
+    draw_set_font(fnt_8bit_story)
+    //draw_text(room_width/2, 50, text);
+    draw_set_valign(fa_top)
+    draw_set_halign(fa_left)
+    draw_text_ext(20, 20, text, 1.5*20, room_width-2*20);
 }
 </string>
           </argument>
