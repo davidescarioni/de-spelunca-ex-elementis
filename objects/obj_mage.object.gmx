@@ -341,8 +341,6 @@ if (move==false) {
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="7" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -359,7 +357,8 @@ if (move==false) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (x&gt;room_width) &amp;&amp; (global.room_est!=noone) {
+            <string>/// Outside Room
+if (x&gt;room_width) &amp;&amp; (global.room_est!=noone) {
     room_goto(global.room_est)
     x=1
 }
